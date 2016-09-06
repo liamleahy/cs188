@@ -1,8 +1,22 @@
 # Artificial Intelligence Contest
+### By: Liam Leahy
 
-This contest was spread out over the course of the semester. Installments were added gradually as new concepts were introduced and we learned more about AI.
+This contest was spread out over the course of the semester. Installments were added gradually as new concepts were introduced and we learned more about AI. I worked with my partner, Stephen Qu, on it.
 
-In short, this contest involved playing a game that is similar to capture the flag. There are two teams that start on opposite corners of a Pac-Man map. Each team has two "agents" who's goal is to collect food pellets from the opponent side and return home with them. However, the opponent can "capture" the agent if that agent is on the opponent's side. Therefore, agents must avoid enemy agents when collecting. The first team to bring at least all but two of the opponents food wins the game. To further complicate things, there is a "power pellet" on each side. If eaten, the team that eats it becomes temporarily invincible and able to consume the opposing team everywhere.
+In short, this contest involved playing a game that is similar to capture the flag. There are two teams that start on opposite corners of a Pac-Man map. Each team has two "agents" whose goal is to collect food pellets from the opponent side and return home with them. The game starts with an agent taking a move. However, the opponent can "capture" the agent if that agent is on the opponent's side. Therefore, agents must avoid enemy agents when collecting. The first team to bring at least all but two of the opponents food wins the game. To further complicate things, there is a "power pellet" on each side. If eaten, the team that eats it becomes temporarily invincible and able to consume the opposing team everywhere.
 
 [boardimage]: https://raw.githubusercontent.com/liamleahy/cs188/master/boardimage.png "Image of Board"
 ![Image of Board][boardimage]
+
+There are many different ideas and systems that work together to make it possible for our bot to function as it does. There were time restrictions so we could not simply sit and solve the board for 30 minutes prior to the game starting. Instead, we are given 15 seconds at the beginning of the game and then at most 1 second per turn to return a move. Additionally, there is also a vision restriction. Despite being able to see the entire board for food and power pellets, we cannot clearly observe the location of each of the opponent agents if they are more than 5 spaces away from the closest friendly agent. Instead, we are given a probability distribution of their positions.
+
+* We start by processing the entire board. This takes the longest time (3 seconds of the maximum 15) to complete. This processing involves:
+    * Creating a graph representation of the entire board.
+    * Finding "bottlenecks", or "choke points" basically dangerous areas that could get an agent stuck. These are used for both offense and defense in that we try to avoid them on offense, but we try to take advantage of them on defense.
+    * Creating particle filters for the opponent positions which are continually updated each time we make a new observation concerning the probability distribution over the opponent positions.
+    * Dividing the food into "clusters" so that the agents more efficiently split up the food.
+    * Creating "plans" from the clusters and the opponent positions.
+    [distributions]: https://raw.githubusercontent.com/liamleahy/cs188/master/boardimage.png "Probability Distribution Coloring on Board"
+    ![Probability Distribution Coloring on Board][distributions]
+
+* Each turn, the current plans for the agents are reviewed and potentially updated given new knowledge about things like the board, score, opponent positions, etc.
