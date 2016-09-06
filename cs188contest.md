@@ -2,7 +2,15 @@
 
 This contest was spread out over the course of the semester. Installments were added gradually as new concepts were introduced and we learned more about AI.
 
+<<<<<<< HEAD
 In short, this contest involved playing a game that is similar to capture the flag. There are two teams that start on opposite corners of a Pac-Man map. Each team has two "agents" who's goal is to collect food pellets from the opponent side and return home with them. However, the opponent can "capture" the agent if that agent is on the opponent's side. Therefore, agents must avoid enemy agents when collecting. The first team to bring at least all but two of the opponents food wins the game. To further complicate things, there is a "power pellet" on each side. If eaten, the team that eats it becomes temporarily invincible and able to consume the opposing team everywhere.
 
 [boardimage]: https://raw.githubusercontent.com/liamleahy/cs188/master/boardimage.png "Image of Board"
 ![Image of Board][boardimage]
+=======
+In short, this contest involved playing a game that is similar to capture the flag. There are two teams that start on opposite corners of a Pac-Man map. Each team has two "agents" who's goal is to collect food pellets from the opponent side and return home with them. However, the opponent can "capture" the agent if that agent is on the opponent's side. Therefore, agents must avoid enemy agents when collecting. The first team to bring at least all but two of the opponents food wins the game.
+
+[boardimage]: https://raw.githubusercontent.com/liamleahy/cs188/master/boardimage.png "Image of Board"
+
+![test][boardimage]
+>>>>>>> cb67c063b6ca9171737f051ff47510618ff87cbd
