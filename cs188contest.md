@@ -6,7 +6,7 @@ This contest was spread out over the course of the semester. Installments were a
 In short, this contest involved playing a game that is similar to capture the flag. There are two teams that start on opposite corners of a Pac-Man map. Each team has two "agents" whose goal is to collect food pellets from the opponent side and return home with them. The game starts with an agent taking a move. However, the opponent can "capture" the agent if that agent is on the opponent's side. Therefore, agents must avoid enemy agents when collecting. The first team to bring at least all but two of the opponents food wins the game. To further complicate things, there is a "power pellet" on each side. If eaten, the team that eats it becomes temporarily invincible and able to consume the opposing team everywhere.
 
 [start_board]: https://raw.githubusercontent.com/liamleahy/cs188/master/boardimage.png "Image of Board"
-[distributions]: https://raw.githubusercontent.com/liamleahy/cs188/master/probabilitydistributions.gif "Probability Distribution Coloring on Board"
+[distributions]: https://raw.githubusercontent.com/liamleahy/cs188/master/probdistributions.gif "Probability Distribution Coloring on Board"
 [clusters]: https://raw.githubusercontent.com/liamleahy/cs188/master/clusters.png "Clusters Found During Game"
 
 ![Image of Board][start_board]
