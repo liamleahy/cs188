@@ -7,7 +7,6 @@ In short, this contest involved playing a game that is similar to capture the fl
 
 [start_board]: https://raw.githubusercontent.com/liamleahy/cs188/master/boardimage.png "Image of Board"
 [distributions]: https://raw.githubusercontent.com/liamleahy/cs188/master/distributions.png "Probability Distribution Coloring on Board"
-
 [clusters]: https://raw.githubusercontent.com/liamleahy/cs188/master/clusters.png "Clusters Found During Game"
 
 ![Image of Board][start_board]
@@ -18,7 +17,7 @@ There are many different ideas and systems that work together to make it possibl
     * Creating a graph representation of the entire board.
     * Finding "bottlenecks", or "choke points" basically dangerous areas that could get an agent stuck. These are used for both offense and defense in that we try to avoid them on offense, but we try to take advantage of them on defense.
     * Creating particle filters for the opponent positions which are continually updated each time we make a new observation concerning the probability distribution over the opponent positions. The coloring of our beliefs concerning the opponent positions can be seen colored in the image below. ![Probability Distribution Coloring on Board][distributions]
-    * Dividing the food into "clusters" so that the agents more efficiently split up the food. ~[Clusters Found During Game][clusters]
+    * Dividing the food into "clusters" so that the agents more efficiently split up the food. ![Clusters Found During Game][clusters]
     * Creating "plans" from the clusters and the opponent positions.
 
 * Each turn, the current plans for the agents are reviewed and potentially updated given new knowledge about things like the board, score, opponent positions, etc.
