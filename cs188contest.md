@@ -1,5 +1,5 @@
 # Artificial Intelligence Contest
-### By: Liam Leahy
+## By: Liam Leahy
 
 This contest was spread out over the course of the semester. Installments were added gradually as new concepts were introduced and we learned more about AI. I worked with my partner, Stephen Qu, on it.
 
@@ -20,4 +20,9 @@ There are many different ideas and systems that work together to make it possibl
     * Dividing the food into "clusters" so that the agents more efficiently split up the food. ![Clusters Found During Game][clusters]
     * Creating "plans" from the clusters and the opponent positions.
 
-* Each turn, the current plans for the agents are reviewed and potentially updated given new knowledge about things like the board, score, opponent positions, etc.
+* Each turn, the current plans for the agents are reviewed and potentially updated given new knowledge about things like the board, score, opponent positions, etc. The optimal move for a "plan", or sequence of moves, is computed using expectimax along with other algorithms that we came up with.
+
+### Here's a clip of a complete game against an opponent.
+Unfortunately, we don't have any recordings of games against other bots made by other people because all the recordings were deleted before we knew about it.
+
+[![Youtube Video of Contest Bot in Action](https://img.youtube.com/vi/JZCilVwfRps/0.jpg)](https://www.youtube.com/watch?v=JZCilVwfRps)
