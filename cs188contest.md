@@ -22,7 +22,8 @@ There are many different ideas and systems that work together to make it possibl
 
 * Each turn, the current plans for the agents are reviewed and potentially updated given new knowledge about things like the board, score, opponent positions, etc. The optimal move for a "plan", or sequence of moves, is computed using expectimax along with other algorithms that we came up with.
 
-### Here's a clip of a complete game against an opponent.
+### Here's a video of a complete game against an opponent.
 Unfortunately, we don't have any recordings of games against other bots made by other people because all the recordings were deleted before we knew about it.
 
+ Click the image to be redirected to youtube.
 [![Youtube Video of Contest Bot in Action](https://img.youtube.com/vi/JZCilVwfRps/0.jpg)](https://www.youtube.com/watch?v=JZCilVwfRps)
