@@ -17,7 +17,7 @@ There are many different ideas and systems that work together to make it possibl
     * Creating a graph representation of the entire board.
     * Finding "bottlenecks", or "choke points" basically dangerous areas that could get an agent stuck. These are used for both offense and defense in that we try to avoid them on offense, but we try to take advantage of them on defense.
     * Creating particle filters for the opponent positions which are continually updated each time we make a new observation concerning the probability distribution over the opponent positions. The coloring of our beliefs concerning the opponent positions can be seen colored in the gif below. ![Probability Distribution Coloring on Board][distributions]
-    * Dividing the food into "clusters" so that the agents more efficiently split up the food. ![Clusters Found During Game][clusters]
+    * Dividing the food into "clusters" so that the agents more efficiently split up the food. The clusters are shown below as the highlighted squares. The different colors show the difference between the clusters for each of our bots. ![Clusters Found During Game][clusters]
     * Creating "plans" from the clusters and the opponent positions.
 
 * Each turn, the current plans for the agents are reviewed and potentially updated given new knowledge about things like the board, score, opponent positions, etc. The optimal move for a "plan", or sequence of moves, is computed using expectimax along with other algorithms that we came up with.
