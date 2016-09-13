@@ -26,4 +26,5 @@ There are many different ideas and systems that work together to make it possibl
 Unfortunately, we don't have any recordings of games against other bots made by other people because all the recordings were deleted before we knew about it.
 
  Click the image to be redirected to youtube.
+ 
 [![Youtube Video of Contest Bot in Action](https://img.youtube.com/vi/JZCilVwfRps/0.jpg)](https://www.youtube.com/watch?v=JZCilVwfRps)
